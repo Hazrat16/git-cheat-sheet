@@ -273,13 +273,13 @@ Adds file contents to the staging area.
    git add file1.txt
 ```
 
-![Git Add](./screenshots/git-add.png) 2. `git add . `: Adds all changes in the current directory and its subdirectories to the staging area.
+2. `git add . `: Adds all changes in the current directory and its subdirectories to the staging area.
 
 ```bash
    git add .
 ```
 
-![Git Add](./screenshots/git-add-1.png)
+![Git Add](./screenshots/git-add.png)
 
 3.`git add --all` : Adds all changes in the entire working tree to the staging area, including untracked files and removing files that have been deleted.
 
@@ -343,7 +343,7 @@ Applies the changes from a specific stash identified by stash_id. If no stash_id
    git stash aplly stash@{2}
 ```
 
-![Git Stash](./screenshots/git-stash-appy.png)
+![Git Stash](./screenshots/git-stash-apply.png)
 
 ##### 4. git stash drop [stash_id]
 
@@ -566,19 +566,21 @@ The `git remote` command allows you to manage the remote repositories associated
 1. `git remote -v`: Lists all remote repositories along with their URLs.
 
 ```bash
-   git remote -v
+   git remote --v
 ```
 
-![Git Remote](./screenshots/git-remote.png) 2. `git remote add <name of origin> <url> `: Adds a new remote repository.
+![Git Remote](./screenshots/git-remote--v.png)
+
+2. `git remote add <name of origin> <url> `: Adds a new remote repository.
 
 ```bash
-   git remote add origin https://github.com/gausalmunirtushar/devops-career-path.git
+   git remote add origin https://github.com/pathURL.git
 ```
 
-![Git Remote](./screenshots/git-remote-1.png) 3. `git remote remove origin `: Removes the specified remote repository.
+3. `git remote remove <name> `: Removes the specified remote repository.
 
 ```bash
-   git remote remove origin
+   git remote remove <name>
 ```
 
 **Description :**
@@ -675,7 +677,7 @@ The `git reset` command is used to reset the current HEAD to a specified state. 
    git reset --hard HEAD~1
 ```
 
-![Git Reset](./screenshots/git-reset-hard.png)
+![Git Reset](./screenshots/git-reset--hard.png)
 
 **Description :**
 
@@ -700,8 +702,10 @@ The `git rm` command is used to remove files from the working directory and the 
 **Example**
 
 ```bash
-   git rm file1.txt
+   git rm textFile1.txt
 ```
+
+![Git rm](./screenshots/git-rm.png)
 
 **Description :**
 
@@ -741,7 +745,7 @@ The `git cherry-pick` command is used to rebase the changes in the current branc
 **Example**
 
 ```bash
-   git cherry-pick 345adgd
+   git cherry-pick <commitHashCode>
 ```
 
 **Description :**
@@ -752,44 +756,6 @@ The `git cherry-pick` command is used to rebase the changes in the current branc
 - Cherry-picking a merge commit requires specifying the parent commit to cherry-pick from.
 
 ![Git Cherry Pick](./screenshots/git-cherry-pick.png)
-
-[Back to Top](#git-setup)
-
-## Git Tagging
-
-The `git tag` command is used to create, list, and delete tags in a Git repository. It is a lightweight version of the `git push` command.
-**Example**
-
-```bash
-   git tag -a v1.0.0 -m "Release 1.0.0"
-```
-
-![Git Tag](./screenshots/git-clean.png)
-
-**Description :**
-
-- `git tag` is a powerful command that allows you to create, list, and delete tags in a Git repository.
-- It is a lightweight version of the `git push` command.
-- `git tag` is useful for creating, listing, and deleting tags in a Git repository.
-
-[Back to Top](#git-setup)
-
-## Git Cleanup
-
-The `git clean` command is used to remove untracked files from the working directory. It deletes all files that are not tracked by Git, including files that are ignored or excluded by Git's ignore rules.
-
-**Example**
-
-```bash
-   git clean
-```
-
-![Git Clean](./screenshots/git-clean.png)
-
-**Description :**
-
-- `git clean` removes all untracked files from the working directory.
-- It deletes all files that are not tracked by Git, including files that are ignored or excluded by Git's ignore rules.
 
 [Back to Top](#git-setup)
 
