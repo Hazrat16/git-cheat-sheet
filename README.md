@@ -465,7 +465,7 @@ The `git branch` command is used to list, create, or delete branches in a Git re
    git branch
 ```
 
-![Git Branch](./screenshots/git-branch-list.png)
+![Git Branch](./screenshots/git-branch.png)
 
 - Creating a Branch
   To create a new branch in Git, you use the git branch command followed by the name of the new branch you want to create.
@@ -474,7 +474,7 @@ The `git branch` command is used to list, create, or delete branches in a Git re
    git branch branch-1
 ```
 
-![Git Branch](./screenshots/git-branch-1.png)
+![Git Branch](./screenshots/git-branch2.png)
 
 - Deleting a Branch
   To delete a branch in Git, you use the `git branch -d` command followed by the name of the branch you want to delete.
@@ -483,16 +483,16 @@ The `git branch` command is used to list, create, or delete branches in a Git re
    git branch -d branch-1
 ```
 
-![Git Branch](./screenshots/git-branch-delete.png)
+![Git Branch](./screenshots/git-branch-d.png)
 
 - Checking Out a Branch
   To switch to a different branch in Git, you use the `git checkout command` followed by the name of the branch you want to switch to.
 
 ```bash
-   git checkout testbranch
+   git checkout branchName
 ```
 
-![Git Branch](./screenshots/git-branch-checkout.png)
+![Git Branch](./screenshots/git-checkout.png)
 
 **Description :**
 
