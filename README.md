@@ -1,6 +1,6 @@
 <h1 align="center"> Git Commands Scribe Sheet </h1>
 
-![GIT Agssignment](./screenshots/git-assignment.jpg)
+![GIT ](./screenshots/git.png)
 
 <p align="center"><i>by <a href="https://github.com/Hazrat16">S.M. Hazrat Ali </a></i></p>
 
@@ -431,6 +431,24 @@ git log
 - `git log` is a powerful tool for inspecting the history of a repository.
 - It shows the commit history, including the commit hash (SHA-1 checksum), author name, email, date, and commit message.
 - By default, git log displays the commits starting from the most recent.
+
+## Git Reflog
+
+The `git log` command is used to view the commit history of a repository. It displays a list of commits in reverse chronological order, showing the commit hash, author, date, and commit message.
+
+**Example**
+
+```bash
+git reflog
+```
+
+![Git Log](./screenshots/git-reflog.png)
+
+**Description :**
+
+-`git reflog` provides insight into the recent actions within a repository, serving as a detailed record of reference updates.
+-It displays information such as commit hashes, descriptions of actions (e.g., commits, merges, resets), timestamps, and reference pointers affected.
+-Unlike `git log`, which focuses on commit history, `git reflog` highlights changes to the repository's references, aiding in debugging, troubleshooting, and recovering lost work.
 
 ## Git Show
 
