@@ -1,6 +1,8 @@
 <h1 align="center"> Git Commands Scribe Sheet </h1>
 
-![GIT ](./screenshots/git.png)
+<div style="text-align:center;">
+<img src="./screenshots/git.png" />
+</div>
 
 <p align="center"><i>by <a href="https://github.com/Hazrat16">S.M. Hazrat Ali </a></i></p>
 
@@ -110,12 +112,14 @@ Displays the currently installed version of Git.
 ```
 
 ![Git Version](./screenshots/git-version.png)
+
 **Description :**
 Displays the current version of Git installed on your system. This command is useful for verifying that Git is installed and for checking the installed version to ensure compatibility with other tools or repositories.
 
 ## Git Config
 
-Git config command is a convenience function that is used to set Git configuration values on a global or local project level
+Git config command is a convenience function that is used to set Git configuration values on a global or local project level.
+
 **Description :**
 The git config command allows you to get and set configuration options that control the appearance and behavior of Git. Configurations can be set at three levels:
 
@@ -151,14 +155,11 @@ Git aliases are a powerful workflow tool that create shortcuts to frequently use
 ```bash
    git config --global alias.co checkout
    git config --global alias.br branch
-   git config --global alias.ci commit
-   git config --global alias.st status
 ```
 
 **Description :**
 
 - Git alias is a mechanism for defining commands that are more accessible and easier to remember than the original command.
-  These aliases make common Git commands shorter and easier to remember. For example:
   These aliases make common Git commands shorter and easier to remember. For example:
 
 - `git co` instead of `git checkout`
@@ -181,7 +182,7 @@ Setting up SSH for GitHub involves generating a new SSH key, adding it to your S
 **Example:**
 
 ```bash
-   ssh-keygen -t rsa -b 4096 -C "gausalmunirtushar@gmail.com"
+   ssh-keygen -t rsa -b 4096 -C "hazrat17016@gmail.com"
 
 ```
 
@@ -544,7 +545,7 @@ The `git merge` command is used to merge changes from one branch into another br
 **Example**
 
 ```bash
-   git merge branch-1
+   git merge branch1
 ```
 
 ![Git Merge](./screenshots/git-merge.png)
@@ -561,7 +562,7 @@ The `git rebase` command is used to rebase the changes in the current branch ont
 **Example**
 
 ```bash
-   git rebase testbranch
+   git rebase <branchName>
 ```
 
 ![Git Rebase](./screenshots/git-rebase.png)
@@ -710,7 +711,7 @@ The `git revert` command is used to undo changes made in previous commits. It cr
 **Example**
 
 ```bash
-   git revert 345adgd
+   git revert <commitHash>
 ```
 
 ## Git Rm
@@ -821,14 +822,6 @@ Thumbs.db
 By properly configuring your .gitignore file, you can ensure that unnecessary files are not included in your Git repository, keeping your project clean and organized.
 
 [Back to Top](#git-setup)
-
-## Git Hooks
-
-- Soon to be release in this doc
-
-## Git Tips and Tricks
-
-- Soon to be release in this doc
 
 ## Git References
 
