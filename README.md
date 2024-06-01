@@ -412,60 +412,6 @@ Removes all stashes from the list of stashes.
 - Stashed changes can be applied or discarded using git stash apply or git stash drop commands.
 - git stash is useful for switching context quickly or temporarily setting aside unfinished work.
 
-## Git Restore
-
-The git restore command is used to discard changes in the working directory or to restore specific files from a commit, the index, or another branch. It is a powerful command for managing changes and reverting unwanted modifications.
-
-##### 1. git restore [file]
-
-Discards changes in the working directory for the specified file(s). This command reverts the file(s) to their state at the last commit.
-
-```bash
-   git restore file1.txt
-```
-
-![Git Restore](./screenshots/git-restore.png)
-
-##### 2. git restore --staged [file]
-
-Discards changes in the staging area for the specified file(s). This command reverts the file(s) to their state at the last commit.
-
-**Example**
-
-```bash
-   git restore --staged file1.txt
-```
-
-![Git Restore](./screenshots/git-restore-staged.png)
-
-##### 5. git restore --source [commit] [file]
-
-Discards changes in the index for the specified file(s). This command reverts the file(s) to their state at the specified commit.
-
-**Example**
-
-```bash
-   git restore --source [commit] file1.txt
-```
-
-##### 6. git restore --worktree [commit] [file]
-
-Discards changes in the worktree for the specified file(s). This command reverts the file(s) to their state at the specified commit.
-
-**Example**
-
-```bash
-   git restore --worktree [commit] file1.txt
-```
-
-**Description :**
-
-- `git restore` is a powerful command for managing changes and reverting unwanted modifications.
-- It is useful for discarding changes in the working directory, the staging area, the index, or the worktree.
-- The `git restore` command can be used to revert changes in the working directory, the staging area, the index, or the worktree.
-
-[Back to Top](#git-setup)
-
 # Inspection and Comparison
 
 ## Git Log
@@ -479,36 +425,12 @@ git log
 ```
 
 ![Git Log](./screenshots/git-log.png)
-![Git Log](./screenshots/git-log-output.png)
-
-```bash
-   git log --oneline
-```
-
-![Git Log](./screenshots/git-log-oneline.png)
 
 **Description :**
 
 - `git log` is a powerful tool for inspecting the history of a repository.
 - It shows the commit history, including the commit hash (SHA-1 checksum), author name, email, date, and commit message.
 - By default, git log displays the commits starting from the most recent.
-
-## Git Diff
-
-The `git diff` command is used to view the difference between the working directory, staging area, and the most recent commit. It shows changes line by line, highlighting additions, deletions, and modifications.
-**Example**
-
-```bash
-   git diff
-```
-
-![Git Diff](./screenshots/git-diff.png)
-**Description :**
-
-- `git diff` is a fundamental command for reviewing changes made to files in a repository.
-- It compares changes between the working directory and the staging area (index) by default.
-- With additional arguments, such as commit hashes or file paths, git diff can compare different versions of files or commits.
-- `git diff` is essential for understanding the current state of the repository and tracking modifications.
 
 ## Git Show
 
